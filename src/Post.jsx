@@ -23,7 +23,8 @@ const Post = () => {
 
 
   return (
-    <div>
+    <div className="body">
+      <h1>Posts</h1>
       <ul className="post">
         {posts.map((post) => (
           <li key={post.id}>
@@ -35,7 +36,9 @@ const Post = () => {
       </ul>
       <div>
         {/* <button onClick={() => setCurrentPage(currentPage-1)} disabled={currentPage === 1}>Previous</button> */}
-        <ReactPaginate  
+        <ReactPaginate
+       containerClassName={"pagination"} 
+       activeClassName={"active"}
         onPageChange={handle}
         pageCount={10}      
          breakLabel="..."
