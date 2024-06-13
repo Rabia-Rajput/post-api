@@ -14,7 +14,7 @@ const Photo = () => {
   }, []);
 
   return <div>
-    <ul> {photos.map(photo=>(
+    <ul> {photos.slice(0, 10).map(photo=>(
    <li key={Photo.id}>
     <h3>{photo.title} </h3>
     <img src={photo.url} alt={photo.thumbnailUrl} />
@@ -22,6 +22,7 @@ const Photo = () => {
     ))}
  
     </ul>
+  
   </div>;
 };
 
