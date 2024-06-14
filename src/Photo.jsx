@@ -4,7 +4,7 @@ const Photo = () => {
   const [photos, setPhotos] = useState([]);
   useEffect(() => {
     const fetchPhotos = async () => {
-      const res = await fetch("https://jsonplaceholder.typicode.com/photos");
+      const res = await fetch("https://jsonplaceholder.typicode.com/photos?_limit=10");
       const data = await res.json();
       console.log(data);
       setPhotos(data);
@@ -14,7 +14,7 @@ const Photo = () => {
   }, []);
 
   return <div>
-    <ul> {photos.slice(0, 10).map(photo=>(
+    <ul> {photos.map(photo=>(
    <li key={Photo.id}>
     <h3>{photo.title} </h3>
     <img src={photo.url} alt={photo.thumbnailUrl} />
