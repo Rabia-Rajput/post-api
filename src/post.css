@@ -68,3 +68,7 @@ background-color:  #0275d8;
 color: rgb(248, 244, 244);
 
 }
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
