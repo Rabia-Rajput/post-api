@@ -1,11 +1,51 @@
 
-/* Pagination links */
+.body h1{
+  font-size: 39px;
+  color: rgb(5, 5, 6);
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+.post{
+  list-style: none;
+padding: 20px 90px;
+}
+
+.post li{
+  border: 1px solid #d1cccc;
+  background-color: #f1eeee;
+  margin-bottom: 30px;
+  padding: 20px;
+ border-radius: 6px;
+ 
+}
+.post li:hover {
+  background-color: #f0f0f0;
+}
+.post li h3{
+  margin-top: 0;
+  color: rgb(54, 56, 56);
+  font-size: 23px;
+  font-family:  Arial, Helvetica, sans-serif;
+
+ 
+}
+.post .p{
+  margin-top: 0;
+font-size: 18px;
+
+
+}
+
+.post p{
+  color: rgb(81, 77, 71);
+}
 .pagination {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   list-style: none;
-
-
+  margin-bottom: 50px;
 }
 
 .pagination li{
