@@ -16,8 +16,8 @@ const Post = () => {
     fetchPost();
   }, [currentPage]);
   const handle = (page) => {
-    console.log(page.selected);
-    setCurrentPage(page.selected);
+    console.log(page.selected + 1);
+    setCurrentPage(page.selected + 1);
   };
 
   return (
@@ -33,16 +33,21 @@ const Post = () => {
         ))}
       </ul>
       <div>
+        {/* <button onClick={() => setCurrentPage(currentPage-1)} disabled={currentPage === 1}>Previous</button> */}
         <ReactPaginate
           containerClassName={"pagination"}
           activeClassName={"active"}
           onPageChange={handle}
-          pageCount={11}
+          pageCount={10}
           breakLabel="..."
           nextLabel="next >"
           pageRangeDisplayed={2}
           previousLabel="< previous"
+          forcePage={currentPage - 1}
+          disabledClassName={"disabled"}
+      
         />
+        {/* <button onClick={() => setCurrentPage(currentPage+1)} disabled={currentPage === 10} >Next</button> */}
       </div>
     </div>
   );
