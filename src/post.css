@@ -25,7 +25,7 @@ padding: 20px 90px;
 .post li h3{
   margin-top: 0;
   color: rgb(54, 56, 56);
-  font-size: 23px;
+  font-size: 20px;
   font-family:  Arial, Helvetica, sans-serif;
 
  
@@ -39,36 +39,4 @@ font-size: 18px;
 
 .post p{
   color: rgb(81, 77, 71);
-}
-.pagination {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 50px;
-}
-
-.pagination li{
-margin: 0 6px;
-}
-.pagination li a{
-  cursor: pointer;
-  padding: 8px 15px;
-  border: 1px solid #282424;
-  color: rgb(34, 34, 39);
-  border-radius: 4px;
- 
-}
-.pagination li a:hover{
-  background-color:  #ddd;
-}
-.pagination .active a{
-border: 1px solid  #0275d8;
-background-color:  #0275d8;
-color: rgb(248, 244, 244);
-
-}
-.disabled {
-  pointer-events: none;
-  opacity: 0.5;
 }
