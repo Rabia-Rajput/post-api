@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/posts" element={<Post />} />
         <Route path="/photos" element={<Photo />} />
-        
+        {/* <Route path="/" element={<div className="welcome"><h1>Welcome to Api</h1></div>} /> */}
       </Routes>
     
     </Router>
