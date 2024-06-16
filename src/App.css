@@ -1,0 +1,38 @@
+.welcome{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+.welcome h1{
+    font-size: 33px;
+    color: #37758fd1;
+}
+
+
+.nav {
+    background-color:#b1d6e9d1 ;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .nav ul{
+    display: flex;
+   justify-content: center;
+   list-style: none;
+   gap: 30px;
+   padding: 0;
+   margin: 20px;
+  }
+  .nav a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(105, 98, 98);
+    transition: color 0.3s ease;
+  
+  }
+  .nav a:hover{
+    color: #37758fd1;
+    
+  }
+  
