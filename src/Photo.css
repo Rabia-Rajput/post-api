@@ -1,0 +1,18 @@
+.photo h1{
+    font-size: 39px;
+    color: rgb(5, 5, 6);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.photo ul{
+    text-align: center;
+    list-style: none;
+}
+img{
+  height: 25vh; 
+  width: 45vh; 
+  object-fit: cover;
+}
