@@ -24,17 +24,17 @@ const Photo = () => {
   return (
     <div>
       <div className="photo">
-      <h1>Photos</h1>
-      <ul>
-        {photos.map((photo) => (
-          <li key={Photo.id}>
-            <h3>
-              {photo.id}. {photo.title}
-            </h3>
-            <img src={photo.url} alt={photo.thumbnailUrl} />
-          </li>
-        ))}
-      </ul>
+        <h1>Photos</h1>
+        <ul>
+          {photos.map((photo) => (
+            <li key={Photo.id}>
+              <h3>
+                {photo.id}. {photo.title}
+              </h3>
+              <img src={photo.url} alt={photo.thumbnailUrl} />
+            </li>
+          ))}
+        </ul>
       </div>
       <ReactPaginate
         containerClassName={"pagination"}
