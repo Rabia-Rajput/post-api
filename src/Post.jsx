@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./post.css";
-import './Paginate.css';
+import "./Paginate.css";
 import ReactPaginate from "react-paginate";
 
 const Post = () => {
@@ -46,7 +46,6 @@ const Post = () => {
           previousLabel="< previous"
           forcePage={currentPage - 1}
           disabledClassName={"disabled"}
-      
         />
         {/* <butimportton onClick={() => setCurrentPage(currentPage+1)} disabled={currentPage === 10} >Next</butimportton> */}
       </div>
